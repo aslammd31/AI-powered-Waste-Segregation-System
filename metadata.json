@@ -1,0 +1,5 @@
+{
+  "name": "EcoScan – Sustainable Waste Intelligence",
+  "description": "Analyze waste items using AI to determine category, environmental impact, and recycling suggestions.",
+  "requestFramePermissions": ["camera", "microphone"]
+}

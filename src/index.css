@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply antialiased;
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-xl border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)];
+}
+
+.glass-dark {
+  @apply bg-emerald-900/10 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)];
+}
+
+.glass-deep {
+  @apply bg-emerald-950/80 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)];
+}
+
+.glass-emerald {
+  @apply bg-emerald-500/10 backdrop-blur-xl border border-emerald-500/20;
+}
+
+.glass-red {
+  @apply bg-red-500/10 backdrop-blur-xl border border-red-500/20;
+}
+
+.glass-amber {
+  @apply bg-amber-500/10 backdrop-blur-xl border border-amber-500/20;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-20px) translateX(10px); }
+  50% { transform: translateY(-10px) translateX(20px); }
+  75% { transform: translateY(10px) translateX(10px); }
+}
+
+.animate-float {
+  animation: float 15s ease-in-out infinite;
+}
+
+.bubble {
+  @apply absolute rounded-full bg-emerald-400/10 blur-3xl pointer-events-none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-emerald-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-emerald-200 rounded-full hover:bg-emerald-300 transition-colors;
+}
