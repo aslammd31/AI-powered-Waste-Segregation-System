@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
@@ -18,3 +19,7 @@ View your app in AI Studio: https://ai.studio/apps/c0ee8870-4223-4b36-a7b4-e827f
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+=======
+# AI-powered-Waste-Segregation-System
+it describes the details of the waste based on it type
+>>>>>>> 1e7326794cf8ffcbd8a0c71c06b65b763bc0bf14
