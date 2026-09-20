@@ -38,9 +38,9 @@ jobs:
         run: npm ci
 
       - name: Build
-  run: npm run build
-  env:
-    GEMINI_API_KEY: ${{ AIzaSyCzj_w44m-JHAPCjBUc88dx3aKwn8y1AMY }}
+        run: npm run build
+        env:
+          GEMINI_API_KEY: ${{ secrets.AIzaSyCzj_w44m-JHAPCjBUc88dx3aKwn8y1AMY }}
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
